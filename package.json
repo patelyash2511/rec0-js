@@ -1,0 +1,52 @@
+{
+  "name": "@rec0ai/rec0",
+  "version": "1.0.0",
+  "description": "JavaScript/TypeScript SDK for rec0 memory API",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "dev": "tsup src/index.ts --format esm,cjs --dts --watch",
+    "test": "node --experimental-vm-modules node_modules/.bin/jest",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build && npm run lint"
+  },
+  "keywords": [
+    "rec0",
+    "memory",
+    "ai",
+    "llm",
+    "sdk"
+  ],
+  "author": "Yash Patel",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patelyash2511/rec0-python"
+  },
+  "bugs": {
+    "url": "https://github.com/patelyash2511/rec0-python/issues"
+  },
+  "homepage": "https://rec0.vercel.app"
+}
