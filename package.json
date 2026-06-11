@@ -43,10 +43,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/patelyash2511/rec0-python"
+    "url": "https://github.com/patelyash2511/rec0-js.git"
   },
   "bugs": {
-    "url": "https://github.com/patelyash2511/rec0-python/issues"
+    "url": "https://github.com/patelyash2511/rec0-js/issues"
   },
   "homepage": "https://rec0.vercel.app"
 }
